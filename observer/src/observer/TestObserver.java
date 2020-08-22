@@ -11,12 +11,12 @@ package observer;
  */
 public class TestObserver {
     public static void main(String[] args) {
-	Senior obj1 = new Senior();
-	Marketing obj2 = new Marketing();
-	HeadQuater obj = new HeadQuater();              
-	obj.register(obj1);              
-	obj.register(obj2);              
-	obj.setSomeData(6);
+        Senior obj1 = new Senior();
+        Marketing obj2 = new Marketing();
+        HeadQuater obj = new HeadQuater();              
+        obj.addObserver(obj1);              
+        obj.addObserver(obj2);              
+        obj.setSomeData(6);
         obj.setSomeData(7);
     }
 }
